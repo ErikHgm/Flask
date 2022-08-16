@@ -10,7 +10,7 @@
             possible!</p>
         <div class="my-5">
 
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <form method="POST" name="sentMessage" id="contactForm" data-sb-form-api-token="API_TOKEN">
                 <div class="form-floating">
                     <input class="form-control" name="name" id="name" type="text" placeholder="Enter your name..."
                         data-sb-validations="required" />
@@ -25,8 +25,8 @@
                     <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                 </div>
                 <div class="form-floating">
-                    <input class="form-control" name="phone" id="phone" type="tel" placeholder="Enter your phone number..."
-                        data-sb-validations="required" />
+                    <input class="form-control" name="phone" id="phone" type="tel"
+                        placeholder="Enter your phone number..." data-sb-validations="required" />
                     <label for="phone">Phone Number</label>
                     <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                 </div>
